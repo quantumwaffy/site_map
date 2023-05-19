@@ -12,7 +12,7 @@ from data_structures import Node
 
 
 class BaseParser:
-    _re_url: str = r"(http|https|www):\/\/([\w\-_]+(?:(?:\.[\w\-_]+)+))([\w\-\.,@?^=%&:/~\+#]*[\w\-\@?^=%&/~\+#])?"
+    _re_url: str = r"^(http:\/\/|https:\/\/|www\.)"
     _request_timeout: int = 5
     _data_class: "Type[Node]" = Node
 
